@@ -1,0 +1,19 @@
+
+<html>
+	<head><title></title>
+		<script>
+			function convert()
+			{
+v2.value = (c.value == 'ctok')? parseInt(v1.value)+273 : (c.value == 'ktoc')? parseInt(v1.value) - 273 : alert('no');
+			}
+
+		</script>
+	</head><body>
+		<table><tr><td align="center">Converter</td></tr>
+		<tr><td><select name="convert" id="c"><option value="ctok">Celcius to Kelvin</option><option value="ktoc">Kelvin to Celcius</option></select></td></tr>
+	<tr><td><input type="text" id="v1" name=""></td></tr>
+<tr><td><input type="text" id="v2" name=""></td></tr>
+<tr><td><input type="button" onclick="convert()" value="Convert" /></td></tr>
+</table>
+	</body>
+</html>
